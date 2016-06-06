@@ -13,6 +13,8 @@ python:
   # PyPy3 currently supports Python 3.2, which Flask does not support.
   # - "pypy3"
 
+cache: pip
+
 addons:
   # HACK Need to update the installed version of PostgreSQL, because it doesn't
   # implement all of the network operators (specifically the &&
