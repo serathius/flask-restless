@@ -1414,7 +1414,7 @@ class API(ModelView):
         single level of relationship data.
 
         """
-        content_type = request.headers.get('Content-Type', None)
+        content_type = request.headers.get('Content-Type', '')
         content_is_json = content_type.startswith('application/json')
         is_msie = _is_msie8or9()
         # Request must have the Content-Type: application/json header, unless
